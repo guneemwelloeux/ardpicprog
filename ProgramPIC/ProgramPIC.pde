@@ -96,6 +96,7 @@ byte dataFlashType          = EEPROM;
 // Device names, forced out into PROGMEM.
 const char s_pic12f629[]  PROGMEM = "pic12f629";
 const char s_pic12f675[]  PROGMEM = "pic12f675";
+const char s_pic12f683[]  PROGMEM = "pic12f683";
 const char s_pic16f630[]  PROGMEM = "pic16f630";
 const char s_pic16f676[]  PROGMEM = "pic16f676";
 const char s_pic16f84[]   PROGMEM = "pic16f84";
@@ -137,6 +138,9 @@ struct deviceInfo const devices[] PROGMEM = {
     {s_pic12f675,  0x0FC0, 1024, 0x2000, 0x2100, 8, 128, 1, 0x3000, FLASH4, EEPROM},
     {s_pic16f630,  0x10C0, 1024, 0x2000, 0x2100, 8, 128, 1, 0x3000, FLASH4, EEPROM},
     {s_pic16f676,  0x10E0, 1024, 0x2000, 0x2100, 8, 128, 1, 0x3000, FLASH4, EEPROM},
+
+    // http://ww1.microchip.com/downloads/en/DeviceDoc/41204C.pdf
+    {s_pic12f683,  0x1280, 2048, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
 
     // http://ww1.microchip.com/downloads/en/DeviceDoc/30262e.pdf
     {s_pic16f84,   -1,     1024, 0x2000, 0x2100, 8,  64, 0, 0, FLASH,  EEPROM},
