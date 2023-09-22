@@ -108,6 +108,11 @@ const char s_pic16f627a[] PROGMEM = "pic16f627a";
 const char s_pic16f628[]  PROGMEM = "pic16f628";
 const char s_pic16f628a[] PROGMEM = "pic16f628a";
 const char s_pic16f648a[] PROGMEM = "pic16f648a";
+const char s_pic16f685[]  PROGMEM = "pic16f685";
+const char s_pic16f687[]  PROGMEM = "pic16f687";
+const char s_pic16f688[]  PROGMEM = "pic16f688";
+const char s_pic16f689[]  PROGMEM = "pic16f689";
+const char s_pic16f690[]  PROGMEM = "pic16f690";
 const char s_pic16f882[]  PROGMEM = "pic16f882";
 const char s_pic16f883[]  PROGMEM = "pic16f883";
 const char s_pic16f884[]  PROGMEM = "pic16f884";
@@ -139,8 +144,18 @@ struct deviceInfo const devices[] PROGMEM = {
     {s_pic16f630,  0x10C0, 1024, 0x2000, 0x2100, 8, 128, 1, 0x3000, FLASH4, EEPROM},
     {s_pic16f676,  0x10E0, 1024, 0x2000, 0x2100, 8, 128, 1, 0x3000, FLASH4, EEPROM},
 
-    // http://ww1.microchip.com/downloads/en/DeviceDoc/41204C.pdf
+    // http://ww1.microchip.com/downloads/en/DeviceDoc/41204f.pdf
+//    PIC12F635
     {s_pic12f683,  0x1280, 2048, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+//PIC16F636
+//PIC16F639
+//PIC16F684
+    {s_pic16f685,  0x4600, 4096, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+    {s_pic16f687,  0x4600, 2048, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+    {s_pic16f688,  0x4600, 4096, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+    {s_pic16f689,  0x4600, 4096, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+    {s_pic16f690,  0x4600, 4096, 0x2000, 0x2100, 9, 256, 0, 0, FLASH4, EEPROM},
+
 
     // http://ww1.microchip.com/downloads/en/DeviceDoc/30262e.pdf
     {s_pic16f84,   -1,     1024, 0x2000, 0x2100, 8,  64, 0, 0, FLASH,  EEPROM},
